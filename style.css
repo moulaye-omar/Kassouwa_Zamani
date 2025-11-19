@@ -1,0 +1,49 @@
+:root{
+    --body-color1:#FAF4EC; /* body  nav*/
+    --body-color2:#FFF8F0; /* a propos / temoignage */
+    --white-color: white;
+    --black-color: white;
+    --btn-color: #8B1A1A;
+    --btn-hover: #B22222;
+    --pading: 2em;
+    --fontsize2560 : 1.5rem;
+    --fontsize1440 : 1.3rem;
+    --fontsize1024 : 1.1rem;
+    --fontsize768 : 1rem;
+    --H1 : 4rem;
+    --H2 : 3rem;
+    --H3 : 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-color1);
+}
+
+/* Entête du projet */
+
+
+
+/* Section A propos */
+
+
+
+/* Section nos produit */
+
+
+
+/* Section témoignage */
+
+
+
+/* Section Contact */
+
+
+
+/* Pied de page */
