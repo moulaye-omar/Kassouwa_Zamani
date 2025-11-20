@@ -31,7 +31,265 @@ body {
 
 
 
-/* Section A propos */
+/* SECTION À PROPOS */
+.apropos {
+    background-color: var(--body-color2);
+    padding:  2em;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apropos h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+.about-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 12px 25px;
+    background: #d8b076;     
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about-btn:hover {
+    transform: scale(1.05);
+}
+
+#toggle-gallery{
+    display: none;
+}
+.images {
+    width: 38rem; 
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.images:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main-img:hover {
+    transform: scale(1.05);
+}
+.gallery {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+#toggle-gallery:checked ~ .gallery {
+    max-height: 500px;
+    max-width: 700px;
+    opacity: 5;
+}
+
+.gallery img {
+    width: 120px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+.images{
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+    animation: floating 3s ease-in-out infinite;
+}
+.images:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation flottante */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@media (min-width: 2560px) {
+    .apropos h2 {
+        font-size: 5rem;
+    }
+    .about-text {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+    .images{
+        width: 70rem;
+    }
+   .gallery img {
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+   position: relative;
+   left: 8rem;
+}
+}
+@media (max-width: 1024px) {
+
+    
+    .apropos h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .images {
+        width: 28rem;      
+        margin: 0 auto;   
+    }
+
+
+    .gallery img {
+        width: 90px;       
+        position: relative;
+        left: 0;          
+        display: block;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .apropos {
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .apropos h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .images {
+        width: 25rem;
+        margin: auto;
+    }
+
+    .gallery {
+       display: flex;
+       
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 70px;
+        left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .apropos h2 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .images {
+        width: 18rem;
+    }
+
+    .gallery img {
+        width: 60px;
+    }
+}
+@media (max-width: 375px) {
+    .apropos h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+
+    .images {
+        width: 16rem;
+    }
+
+    .gallery img {
+        width: 55px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
