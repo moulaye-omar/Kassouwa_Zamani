@@ -645,6 +645,10 @@ body {
     border: none;
     border-radius: 10px;
 }
+.contact-info form *:focus{
+    outline: none;
+    box-shadow: 0 0 5px 1px var(--btn-hover);
+}
 .contact-info textarea{
     padding: 10px;
     border-radius: 10px;
@@ -660,7 +664,7 @@ body {
     background: var(--btn-color);
     border-radius: 10px;
     color: var(--white-color);
-    box-shadow: 0 0 10px 2px var(--btn-hover);
+    box-shadow: 0 0 5px 1px var(--btn-hover);
     cursor: pointer;
 }
 .contact-info button:hover{
@@ -668,6 +672,32 @@ body {
 }
 
 /* Pied de page */
+.footer-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fontsize1024);
+    padding: var(--pading);
+    background: var(--body-color2);
+}
+.footer-page div{
+    text-align: center;
+}
+.reseau-sociaux i{
+    font-size: var(--fontsize2560);
+    color: var(--btn-color);
+    padding: 10px;
+}
+.reseau-sociaux a{
+    text-decoration: none;
+}
+.reseau-sociaux i:hover{
+    scale: 1.2;
+    color: var(--btn-hover);
+}
+.footer-page img{
+    width: 13rem;
+}
 
 
 
