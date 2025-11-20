@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAF4EC;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    display: flex;
+    width: 750px;
+    height: 450px;
+    background-color: #d8b176a8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.logo-part{
+    width: 50%;
+    background-color: #2b1904;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 0px 30px 30px 0px;
+}
+.informations{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #2b1904;
+}
+.informations input{
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2b1904;
+    width: 80%;
+    outline: none;
+    background-color: #FAF4EC;
+}
+.informations input:focus{
+    border: solid 1.5px #2b1904;
+}
+.informations li{
+    list-style: none;
+}
+.informations li a{
+    text-decoration: none;
+    color: #2b1904;
+}
+
+/* .k{
+    width: 70px;
+    height: 70px;
+} */
+.k img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.but a{
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid #FAF4EC;
+    color: #FAF4EC;
+    background-color: #d8b076;
+    cursor: pointer;
+    text-decoration: none;
+}
+.butt button{
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid #2b1904;
+    background-color: #FAF4EC;
+    cursor: pointer;
+    /* color: #2b1904; */
+}
+
+.ics{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.ic{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.ic i{ 
+    font-size: 1.3em ;
+}.ic:hover{
+    color: #FAF4EC;
+    transform: scale(1.2);
+}
+.co{
+    /* color: #2b1904; */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* 
+@media ( max-width:768px) {
+    .block{
+        flex-direction: column;
+        height: 100%;
+        width: auto;
+        padding: 50px;
+    }
+} */
+
+
