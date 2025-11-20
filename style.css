@@ -10,6 +10,7 @@
     --fontsize1440 : 1.3rem;
     --fontsize1024 : 1.1rem;
     --fontsize768 : 1rem;
+    --fontsize-768: 0.8rem;
     --H1 : 4rem;
     --H2 : 3rem;
     --H3 : 2rem;
@@ -24,6 +25,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body-color1);
+    font-size: var(--fontsize2560);
 }
 
 /* Entête du projet */
@@ -43,7 +45,105 @@ body {
 
 
 /* Section Contact */
-
-
+#contact{
+    text-align: center;
+    padding: var(--pading);
+}
+.contact-info{
+    margin-top: 3rem;
+    display: flex; 
+}
+.contact-info div{
+    flex: 1;
+    justify-items: center;
+    text-align: start;
+}
+.contact-info a{
+    text-decoration: none;
+    color: black;
+}
+.contact-info ul{
+    list-style: none;
+}
+.contact-info ul li{
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+.contact-info i{
+    margin-right: 5px;
+}
+.contact-info form{
+    display: grid;
+    width: 100%;
+    max-width: 48rem;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.contact-info form input{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.contact-info textarea{
+    padding: 10px;
+    border-radius: 10px;
+    grid-column: span 2;
+    resize: none;
+    height: 10vh;
+    border: none;
+    margin-bottom: 20px;
+}
+.contact-info button{
+    padding: 10px;
+    border: none;
+    background: var(--btn-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    box-shadow: 0 0 10px 2px var(--btn-hover);
+    cursor: pointer;
+}
+.contact-info button:hover{
+    background: var(--btn-hover);
+}
 
 /* Pied de page */
+
+
+
+
+
+
+
+/* media contact */
+@media (max-width:1024px) and (min-width:768px){
+    body{
+        font-size: var(--fontsize1024);
+    }
+    .contact-info textarea{
+        height: 12vh;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:768px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .contact-info form{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .contact-info input{
+        grid-column: span 2;
+    }
+    .contact-info ul li{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:425px) {
+    body{
+        font-size: var(--fontsize-768);
+    }
+    .contact-info form input{
+        padding: 10px;
+    }
+}
