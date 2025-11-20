@@ -24,10 +24,255 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body-color1);
-    font-size: var(--fontsize2560);
 }
 
 /* Entête du projet */
+.header{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 70px; */
+    z-index: 1;
+    background-color: #FAF4EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: #fff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.3rem;
+    /* padding-right: 100px; */
+}
+.nav-links a {
+    color: #2b1904;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-links a:hover {
+    color:  #8B1A1A;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    border: solid 1px black; 
+}
+.logo img{
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    z-index: 10;
+}
+.bouton button{
+  padding: 20%;
+  /* width: 140%; */
+  font-size: 0.8rem;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #d8b076;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* --------   dropdown ------------ */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.panier-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Icône */
+.profile-icon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #2b1904; /* adapte à ta navbar */
+}
+.panier-icon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #2b1904; /* adapte à ta navbar */
+}
+.panier-icon:hover{
+  color: #8B1A1A;
+}
+.profile-icon:hover{
+  color: #8B1A1A;
+}
+
+/* On cache la checkbox */
+#profile-toggle {
+    display: none;
+}
+#panier-toggle {
+    display: none;
+}
+
+/* Menu caché par défaut */
+.menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    width: 200px;
+    /* height: 200px; */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 30px;
+}
+.menu1 {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    /* width: 16em; */
+    width: auto;
+    /* height: 200px; */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;
+    line-height: 30px;
+}
+
+/* Quand la checkbox est cochée → afficher */
+#profile-toggle:checked ~ .menu {
+    display: block;
+}
+#panier-toggle:checked ~ .menu1 {
+    display: block;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #d8b076;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #d8b17664;
+}
+
+.circle-user i{
+  font-size: 2rem;
+  color: #2b1904;
+  /* border: solid 1px black; */
+}
+.ecris p{
+  font-size: 1rem;
+  color: #2b1904;
+}
+.ecriss{
+  display: flex;
+  color: #2b1904;
+  font-size: 0.8rem;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+.ecriss button{
+  padding: 5px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  background-color:#d8b076;
+}
+
+
+/* -------------  carroussel -------------- */
+/* ----- CAROUSEL ----- */
+.text-overlay{
+    position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  color: white;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  width: 80%;
+}
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  top: 70px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;   /* 3 images = 300% */
+  height: 100%;
+  animation: slide 10s ease-in-out infinite alternate-reverse; /* 6s par image */
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Assombrir légèrement chaque image */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+}
+
+/* ----- ANIMATION ----- */
+@keyframes slide {
+
+  /* IMAGE 1 */
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(0); }
+
+  /* PASSAGE À L’IMAGE 2 */
+  33%  { transform: translateX(-100vw); }
+  63%  { transform: translateX(-100vw); }
+
+  /* PASSAGE À L’IMAGE 3 */
+  66%  { transform: translateX(-200vw); }
+  100% { transform: translateX(-200vw); }
+}
+
+
 
 
 
