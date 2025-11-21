@@ -116,14 +116,26 @@ body{
     font-size: 1.5em;
     font-weight: bold;
 }
-/* 
+
 @media ( max-width:768px) {
     .block{
         flex-direction: column;
         height: 100%;
         width: auto;
-        padding: 50px;
+        margin: 20px;
     }
-} */
+    .logo-part {
+        border-radius: 0;
+        width: 350px;
+        height: 300px;
+    }
+    .informations {
+        width: 350px;
+        padding: 40px;
+    }
+    .informations input {
+        width: 100%;
+    }
+}
 
 
