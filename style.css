@@ -37,7 +37,7 @@ body {
     top: 0;
     width: 100%;
     /* height: 70px; */
-    z-index: 1;
+    z-index: 6;
     background-color: #FAF4EC;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body {
     font-weight: 700;
 }
 .nav-links a:hover {
-    color:  #8B1A1A;
+    color:  #d8b076;
 }
 .logo{
     width: 60px;
@@ -205,16 +205,42 @@ body {
   background-color:#d8b076;
 }
 
+.typewriter {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;             /* cache le texte */
+  border-right: 3px solid white; /* curseur */
+  white-space: nowrap;          /* ne pas passer à la ligne */
+  width: 0;                     /* commence vide */
+ animation: typing 5s steps(20) infinite alternate,
+             blink 0.7s infinite;
+}
+
+
+/* animation écriture */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 93%; }
+}
+
+/* animation clignotement du curseur */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
 
 /* -------------  carroussel -------------- */
 /* ----- CAROUSEL ----- */
 .text-overlay{
     position: absolute;
   z-index: 5;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  color: #FAF4EC;
+  /* text-align: center; */
 
   color: white;
   text-shadow: 0 2px 20px rgba(0,0,0,0.8);
@@ -618,6 +644,304 @@ body {
 .card_media {
     height: 26rem;
 } 
+
+#toggle-detail1 {
+    display: none;
+}
+#toggle-detail2 {
+    display: none;
+}
+#toggle-detail3 {
+    display: none;
+}
+#toggle-detail4 {
+    display: none;
+}
+#toggle-detail5 {
+    display: none;
+}
+#toggle-detail6 {
+    display: none;
+}
+#toggle-detail7 {
+    display: none;
+}
+#toggle-detail8 {
+    display: none;
+}
+#toggle-detail9 {
+    display: none;
+}
+#toggle-detail10 {
+    display: none;
+}
+#toggle-detail11 {
+    display: none;
+}
+#toggle-detail12 {
+    display: none;
+}
+
+#toggle-detail1:checked ~ .detail1 {
+    display: flex;
+}
+
+#toggle-detail2:checked ~ .detail2 {
+    display: flex;
+}
+
+#toggle-detail3:checked ~ .detail3 {
+    display: flex;
+}
+#toggle-detail4:checked ~ .detail4 {
+    display: flex;
+}
+#toggle-detail5:checked ~ .detail5 {
+    display: flex;
+}
+#toggle-detail6:checked ~ .detail6 {
+    display: flex;
+}
+#toggle-detail7:checked ~ .detail7 {
+    display: flex;
+}
+#toggle-detail8:checked ~ .detail8 {
+    display: flex;
+}
+#toggle-detail9:checked ~ .detail9 {
+    display: flex;
+}
+#toggle-detail10:checked ~ .detail10 {
+    display: flex;
+}
+#toggle-detail11:checked ~ .detail11 {
+    display: flex;
+}
+#toggle-detail12:checked ~ .detail12 {
+    display: flex;
+}
+
+.detail1 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.detail1 a {
+    text-decoration: none;
+}
+.detail2 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail2 a {
+    text-decoration: none;
+}
+.detail3 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail3 a {
+    text-decoration: none;
+}
+.detail4 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail4 a {
+    text-decoration: none;
+}
+.detail5 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail5 a {
+    text-decoration: none;
+}
+.detail6 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail6 a {
+    text-decoration: none;
+}
+.detail7 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail7 a {
+    text-decoration: none;
+}
+.detail8 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail8 a {
+    text-decoration: none;
+}
+.detail9 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail9 a {
+    text-decoration: none;
+}
+.detail10 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail10 a {
+    text-decoration: none;
+}
+.detail11 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail11 a {
+    text-decoration: none;
+}
+.detail12 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.detail12 a {
+    text-decoration: none;
+}
+
+.detail-content {
+    position: relative;
+    background: var(--body-color1);
+    border-radius: 10px;
+    width: 700px;
+    height: 600px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+    overflow-y: scroll;
+} 
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+.close {
+    float: right;
+    text-decoration: none;
+    font-size: 22px;
+    color: #555;
+}
+
+
+.close:hover {
+    color: #000;
+}
+
+/* Titre + prix */
+.detail-header h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Image */
+.detail-image img {
+    width: 50%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Description */
+.detail-description {
+    margin-bottom: 20px;
+    text-align: start;
+    line-height: 1.8;
+}
+
+.detail-description ul {
+    padding-left: 18px;
+}
+
+.bton2 {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #D8B076;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bton2:hover {
+    background-color: #2B1904;
+}
+
 .card_media img {
     width: 100%;
     height: 100%; 
@@ -933,19 +1257,39 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: var(--fontsize1024);
-  padding: var(--pading);
+  padding: 1em;
   background: var(--body-color2);
 }
 .page-footer div {
   text-align: center;
 }
-.reseau-sociaux i {
-  font-size: var(--fontsize2560);
-  padding: 10px;
+.ics{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
 }
-.reseau-sociaux i:hover {
-  scale: 1.2;
-  color: var(--btn-hover);
+.ic{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.ic i{ 
+    font-size: 1.3em ;
+}.ic:hover{
+    color: #D8B076;
+    transform: scale(1.2);
+}
+.co{
+    /* color: #2b1904; */
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .page-footer a {
   text-decoration: none;
@@ -960,7 +1304,7 @@ body {
   list-style: none;
 }
 .page-footer img {
-  width: 10rem;
+  width: 8rem;
   clip-path: circle();
 }
 
@@ -1054,6 +1398,11 @@ body {
     .section_card {
         display: flex;
         flex-direction: column;
+    }
+
+    .detail-content {
+        margin: 3em;
+        top: 3em;
     }
 
     .store_content {

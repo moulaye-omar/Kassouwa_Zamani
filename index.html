@@ -31,8 +31,15 @@
         <div class="carousel">
 
             <div class="text-overlay">
-                <h2>Mon texte fixe</h2>
-                <p>Ce texte reste toujours visible</p>
+<h1 class="typewriter">Bienvenue sur Kassuwa Zamani</h1>
+                <h2>Votre Bonheur, Notre Priorité</h2>
+                
+                <!-- <div class="reseau">
+                    <div><i class="fa-brands fa-facebook-f"></div>
+                    <div><i class="fa-brands fa-instagram"></div>
+                    <div><i class="fa-brands fa-twitter"></div>
+                    <div><i class="fa-brands fa-linkedin-in"></div>
+               </div> -->
             </div>
 
             <div class="slides">
@@ -112,7 +119,8 @@
         <section class="partie1" id="Accessoire">
             <h2>Accessoire</h2>
             <div class="section_card">
-                <div class="card">
+                <input type="checkbox" id="toggle-detail1">
+                <label for="toggle-detail1" class="card">
                     <div class="card_media">
                         <img src="images/chaussure.jpg" alt="">
                     </div>
@@ -127,12 +135,49 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
-                        
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail1" class="detail1">
+                <div class="detail-content">
+                    <label for="toggle-detail1" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Chaussure Balka – Cuir Traditionnel</h2>
+                        <p class="price">3 467 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/chaussure.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Un modèle inspiré du savoir-faire artisanal du Niger, conçu pour les hommes qui aiment allier confort et élégance au quotidien.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : 40 à 46</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                <input type="checkbox" id="toggle-detail2">
+                <label for="toggle-detail2" class="card">
                     <div class="card_media">
                         <img src="images/bijoux-touareg.jpg" alt="">
                     </div>
@@ -147,12 +192,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail2">
+                <div class="detail-content">
+                    <label for="toggle-detail2" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Bijoux Touareg</h2>
+                        <p class="price">3 467 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/bijoux-touareg.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionnés à la main par les artisans touaregs d’Agadez, ces bijoux sont réalisés selon la technique ancestrale de la cire perdue. Chaque pièce est unique, raffinée et témoigne d’un savoir-faire authentique.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cire véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : Adulte et enfants</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox"  id="toggle-detail3">
+                <label for="toggle-detail3" class="card">
                     <div class="card_media">
                         <img src="images/main-image-6_8c3b246a-eee8-413c-8039-f659c719295b.webp" alt="">
                     </div>
@@ -167,11 +250,48 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail3">
+                <div class="detail-content">
+                    <label for="toggle-detail3" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Sac à main</h2>
+                        <p class="price">5 000 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/main-image-6_8c3b246a-eee8-413c-8039-f659c719295b.webp" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
+                </div>
+                <!-- contenu caché fin -->
                 </div>
                 <div class="voir_btn">
                     <a href="accessoire.html"><button type="submit" class="bton1">Voir plus...</button></a>
@@ -182,7 +302,8 @@
         <section class="partie2" id="Nos plats">
             <h2>Nos plats</h2>
             <div class="section_card">
-                <div class="card">
+                <input type="checkbox" id="toggle-detail4">
+                <label for="toggle-detail4" class="card">
                     <div class="card_media">
                         <img src="images/5eba5f369aae5f912616a1ebcbe09716.jpg" alt="">
                     </div>
@@ -197,12 +318,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail4">
+                <div class="detail-content">
+                    <label for="toggle-detail4" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Sac à main</h2>
+                        <p class="price">5 000 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/5eba5f369aae5f912616a1ebcbe09716.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                <input type="checkbox" id="toggle-detail5">
+                <label for="toggle-detail5" class="card">
                     <div class="card_media">
                         <img src="images/EebK1DXXkAE840i.jpg" alt="">
                     </div>
@@ -217,12 +376,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail5">
+                <div class="detail-content">
+                    <label for="toggle-detail5" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Pate de maïs</h2>
+                        <p class="price">500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/EebK1DXXkAE840i.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail6">
+                <label for="toggle-detail6" class="card">
                     <div class="card_media">
                         <img src="images/20220527_132525-950x713.jpg" alt="">
                     </div>
@@ -237,11 +434,48 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail6">
+                <div class="detail-content">
+                    <label for="toggle-detail6" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/20220527_132525-950x713.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
+                </div>
+                <!-- contenu caché fin -->
                 </div>
                 <div class="voir_btn">
                     <a href="plats.html"><button type="submit" class="bton1">Voir plus...</button></a>
@@ -252,7 +486,8 @@
         <section class="partie3" id="Vêtements">
             <h2>Vêtements</h2>
             <div class="section_card">
-              <div class="card">
+                <input type="checkbox" id="toggle-detail7">
+              <label for="toggle-detail7" class="card">
                     <div class="card_media">
                         <img src="images/habillement11.jpg" alt="">
                     </div>
@@ -267,12 +502,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+              </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail7">
+                <div class="detail-content">
+                    <label for="toggle-detail7" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/habillement11.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail8">
+                <label for="toggle-detail8" class="card">
                     <div class="card_media">
                         <img src="images/habillement10.jpg" alt="">
                     </div>
@@ -287,12 +560,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail8">
+                <div class="detail-content">
+                    <label for="toggle-detail8" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/habillement10.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail9">
+                <label for="toggle-detail9" class="card">
                     <div class="card_media">
                         <img src="images/cropped-wp-1581316121103-1.jpg" alt="">
                     </div>
@@ -307,11 +618,48 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail9">
+                <div class="detail-content">
+                    <label for="toggle-detail9" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/cropped-wp-1581316121103-1.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
+                </div>
+                <!-- contenu caché fin -->
                 </div>
                 <div class="voir_btn">
                     <a href="Vêtements.html"><button type="submit" class="bton1">Voir plus...</button></a>
@@ -322,7 +670,8 @@
         <section class="partie3" id="Produits Agricole">
             <h2>Produits Agricole</h2>
             <div class="section_card">
-                <div class="card">
+                <input type="checkbox" id="toggle-detail10">
+                <label for="toggle-detail10" class="card">
                     <div class="card_media">
                         <img src="images/POMME-DE-TERRE-ARCHIVES-PHOTOS-4.jpg" alt="">
                     </div>
@@ -337,12 +686,50 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail10">
+                <div class="detail-content">
+                    <label for="toggle-detail10" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Pomme de terre</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/POMME-DE-TERRE-ARCHIVES-PHOTOS-4.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail11">
+                <label for="toggle-detail11" class="card">
                     <div class="card_media">
                         <img src="images/OIGNONS.jpg" alt="">
                     </div>
@@ -357,12 +744,49 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
-                        
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail11">
+                <div class="detail-content">
+                    <label for="toggle-detail11" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Oignons</h2>
+                        <p class="price">1 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/OIGNONS.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
-                <div class="card">
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail12">
+                <label for="toggle-detail12" class="card">
                     <div class="card_media">
                         <img src="images/News_8_22_klein.webp" alt="">
                     </div>
@@ -377,11 +801,48 @@
                             <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <div class="card_button">
-                            <button type="submit" class="bton1">Ajouter au panier</button>
+                            <a href="connexion.html"><button type="submit" class="bton1">Ajouter au panier</button></a>
                         </div>
                         
                     </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail12">
+                <div class="detail-content">
+                    <label for="toggle-detail12" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Oignons</h2>
+                        <p class="price">1 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/News_8_22_klein.webp" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
                 </div>
+                </div>
+                <!-- contenu caché fin -->
                 </div>
                 <div class="voir_btn">
                     <a href="Produits_Agricole.html"><button type="submit" class="bton1">Voir plus...</button></a>
@@ -544,10 +1005,12 @@
             </ul>
         </div>
         <div class="reseau-sociaux">
-            <a href="https://www.facebook.com/SHEINUS/"><i class="fa-brands fa-facebook-f"></i> </a>
-            <a href="instagram.com/shein_us/"><i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://x.com/SHEIN_News"><i class="fa-brands fa-twitter"></i> </a>
-            <a href="linkedin.com/careersite/sheinus"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="ics">
+                <div class="ic"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="ic"><i class="fa-brands fa-instagram"></i></div>
+                <div class="ic"><i class="fa-brands fa-twitter"></i></div>
+                <div class="ic"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
         </div>
     </footer>
 </body>
