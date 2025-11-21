@@ -1233,7 +1233,17 @@ body {
   }
   /* section footer */
   .page-footer {
-    gap: 20px;
+    font-size: 10px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.page-footer img {
+    width: 4rem;
+}
+  .page-footer i {
+    font-size: var(--fontsize768);
   }
   .page-footer i {
     font-size: var(--fontsize1440);
@@ -1523,95 +1533,23 @@ body {
     }
 }
 
-@media (max-width: 425px) {
-
-  /* ------------ header ----------- */
-
-  
-.typewriter {
-    font-size: 1.5rem;
-  }
-  .slogan{
-    font-size: 1rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 118%; }
-  }
-
-  .slide {
-    width: 100%;
-  }
-
-  /* ------------ A propos ------------  */
-    .apropos h2 {
-        font-size: 2rem;
-    }
-
-    .about-text {
-        font-size: 1rem;
-    }
-
-    .images {
-        width: 18rem;
-    }
-
-    .gallery img {
-        width: 60px;
-    }
-}
-@media (max-width: 375px) {
-
-  /* ---------- header ----------- */
-.typewriter {
-    font-size: 1.3rem;
-  }
-  .slogan{
-    font-size: 0.7rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 113%; }
-  }
-
-
-
-  /* ----------- A propos ------------- */
-    .apropos h2 {
-        font-size: 1.8rem;
-    }
-
-    .about-text {
-        font-size: 0.95rem;
-    }
-
-    .images {
-        width: 16rem;
-    }
-
-    .gallery img {
-        width: 55px;
-    }
-}
 
 @media (max-width:1440px) {
     body{
         font-size: var(--fontsize1440);
     }
+
     .section_temoignage{
         height: auto;
     }
+
     .temoigange_cards ,.partenaire_cards{
-    width: 90%;
-}
-.témoignage_liste{
-    gap: 150px;
-    
-}
+        width: 90%;
+    }
+    .témoignage_liste{
+        gap: 150px;
+        
+    }
 
 }
 @media (max-width:1024px) {
@@ -1619,18 +1557,18 @@ body {
         font-size: var(--fontsize1024);
     }
     .temoigange_cards ,.partenaire_cards{
-    width: 100%;
-}
-.temoigange_cards .right{
-    right: 10px;
-}
+        width: 100%;
+    }
+    .temoigange_cards .right{
+        right: 10px;
+    }
 
-.temoigange_cards .left{
-    left: 10px;
-}
-.témoignage_liste{
-    gap: 80px;   
-}
+    .temoigange_cards .left{
+        left: 10px;
+    }
+    .témoignage_liste{
+        gap: 80px;   
+    }
 } 
 @media (max-width:768px) {
     body{
@@ -1650,30 +1588,105 @@ body {
 }
 
 @media (max-width:425px) {
+    /* body */
     body{
         font-size: var(--fontsize768);
     }
+
+    /* ------------ header ----------- */
+    .typewriter {
+        font-size: 1.5rem;
+    }
+    .slogan{
+        font-size: 1rem;
+    }
+
+    /* animation écriture */
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 118%; }
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+  /* ------------ A propos ------------  */
+    .apropos h2 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .images {
+        width: 18rem;
+    }
+
+    .gallery img {
+        width: 60px;
+    }
+
     .temoigange_cards ,.partenaire_cards{
     width: 100%;
-}
-.témoignage_liste{
-    gap: 120px;
-}
+    }
+
+    .témoignage_liste{
+        gap: 120px;
+    }
+
     .carte{
-    width: 300px;
-    height:200px;
-}
-.témoignage_liste{
-    padding-left: 60px;
-}
+        width: 300px;
+        height:200px;
+    }
+
+    .témoignage_liste{
+        padding-left: 60px;
+    }
 
 }
+
 @media (max-width:375px) {
-.témoignage_liste{
-    padding-left: 25px;
-}
+
+    /* ---------- header ----------- */
+    .typewriter {
+        font-size: 1.3rem;
+    }
+    .slogan{
+        font-size: 0.7rem;
+    }
+
+    /* animation écriture */
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 113%; }
+    }
+
+
+
+    /* ----------- A propos ------------- */
+    .apropos h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+
+    .images {
+        width: 16rem;
+    }
+
+    .gallery img {
+        width: 55px;
+    }
+    .témoignage_liste{
+        padding-left: 25px;
+    }
 
 }
+
 @media (max-width:320px) {
 .témoignage_liste{
     padding-left: 0px;
