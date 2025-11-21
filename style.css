@@ -25,6 +25,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body-color1);
 }
+<<<<<<< HEAD
 
 /* Entête du projet */
 .header{
@@ -1164,9 +1165,11 @@ body {
 
 /* Section témoignage */
 
+=======
+>>>>>>> 8d2ff998ea4ed61512ea480916be64ead24ee5ec
 .section_temoignage{
-    /* padding-top: 100px; */
-    padding: var(--pading);
+    padding: 100px 2em 2em;
+    /* padding: var(--pading); */
     background-color: var(--body-color2);
     height: 100vh;
 }
@@ -1177,6 +1180,10 @@ body {
     flex-direction: column;
     gap: 20px;
     height: 50%;
+}
+.T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H2);
+    color: #2b1904;
 }
 .temoigange_cards ,.partenaire_cards{
     display: flex;
@@ -1189,22 +1196,23 @@ body {
 .témoignage_liste{
     list-style: none;
     display: flex;
-    gap: 300px;
-    justify-content: center;
+    gap: 320px;
+    justify-content: start;
     align-items: center;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
 }
 .temoigange_cards .right{
     position: absolute;
-    right: 0px;
+    right: 80px;
     font-size: 50px;
     cursor: pointer;
 }
+
 .temoigange_cards .left{
     position: absolute;
-    left: 0;
+    left: 80px;
     font-size: 50px;
     cursor: pointer;
 }
@@ -1216,14 +1224,9 @@ body {
     width: 400px;
     gap: 10px;
 }
-/* @keyframes movie {
-    0% {
-        transform: translateX(0%); 
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */
+.temoignage:target{
+    transform: translateX(-50%);
+}
 .temoignage .image{
     object-fit: cover;
     display: flex;
@@ -1263,10 +1266,10 @@ body {
     opacity: 1;
     height: 15px;
     width: 15px;
-    background-color: var(--btn-color);
+    background-color: #2b1904;
 }
 .temoigange_cards .t_pointe span:hover{
-    background-color: var(--btn-color);
+    background-color: #2b1904;
     opacity: 1;
 }
 .T_parti_2{
@@ -1275,9 +1278,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.T_parti_2 h1{
-    margin-top: 20px;
+    text-align: center;
 }
 .partenaire_cards{
     padding: 50px;
@@ -1318,10 +1319,24 @@ body {
 }
  
 @media (max-width:1440px) {
+    body{
+        font-size: var(--fontsize1440);
+    }
+    .T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H1);
+}
     .section_temoignage{
         height: auto;
     }
+    .temoigange_cards ,.partenaire_cards{
+    width: 90%;
+}
+.témoignage_liste{
+    gap: 150px;
+    
+}
 } 
+<<<<<<< HEAD
 
 /* Section Contact */
 #contact {
@@ -1593,4 +1608,91 @@ body {
         font-size: 8px;
         border-radius: 5px;
     }
+=======
+@media (max-width:1024px) {
+    body{
+        font-size: var(--fontsize1024);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.temoigange_cards .right{
+    right: 10px;
+}
+
+.temoigange_cards .left{
+    left: 10px;
+}
+.témoignage_liste{
+    gap: 80px;   
+}
+} 
+@media (max-width:768px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 150px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H3);
+}
+
+}
+@media (max-width:450px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 120px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.témoignage_liste{
+    padding-left: 60px;
+}
+}
+@media (max-width:450px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 120px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.témoignage_liste{
+    padding-left: 60px;
+}
+
+}
+@media (max-width:375px) {
+.témoignage_liste{
+    padding-left: 25px;
+}
+
+}
+@media (max-width:320px) {
+.témoignage_liste{
+    padding-left: 0px;
+}
+
+>>>>>>> 8d2ff998ea4ed61512ea480916be64ead24ee5ec
 }
