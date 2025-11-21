@@ -290,7 +290,7 @@ body {
 .apropos h2 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .about-container {
@@ -299,7 +299,6 @@ body {
     align-items: center;
     gap: 3rem;
     width: 90%;
-    margin: auto;
 }
 
 .about-text {
@@ -322,7 +321,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     transition: 0.3s ease;
-       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .about-btn:hover {
@@ -394,14 +393,13 @@ body {
 
 @media (min-width: 2560px) {
     .apropos h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .about-text {
-        font-size: 2rem;
-        line-height: 1.8;
+        font-size: 1.5rem;
     }
     .images{
-        width: 70rem;
+        width: 50rem;
     }
    .gallery img {
     width: 100px;
@@ -445,7 +443,6 @@ body {
 
 @media (max-width: 768px) {
     .apropos {
-        height: auto;
         padding: 2em 1em;
     }
 
@@ -543,6 +540,7 @@ body {
 .produit {
     color: #2B1904;
     text-align: center;
+    padding-top: 100px;
 }
 .produit h1 {
     font-size: 3rem;
@@ -851,99 +849,185 @@ body {
 } 
 
 /* Section Contact */
-#contact{
-    text-align: center;
-    padding: var(--pading);
+#contact {
+  text-align: center;
+  padding: var(--pading);
 }
-.contact-info{
-    margin-top: 3rem;
-    display: flex; 
+.contact-info {
+  margin-top: 3rem;
+  display: flex;
 }
-.contact-info div{
-    flex: 1;
-    justify-items: center;
-    text-align: start;
+.contact-info div {
+  flex: 1;
+  justify-items: center;
+  text-align: start;
 }
-.contact-info a{
+.contact-info a {
+  text-decoration: none;
+  color: black;
+}
+.contact-info ul {
+  list-style: none;
+}
+.contact-info ul li {
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.contact-info i {
+  margin-right: 5px;
+}
+
+.form_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info form {
+  display: grid;
+  width: 100%;
+  max-width: 48rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.contact-info form input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.contact-info form *:focus {
+  outline: none;
+  box-shadow: 0 0 5px 1px var(--btn-hover);
+}
+.contact-info textarea {
+  padding: 10px;
+  border-radius: 10px;
+  grid-column: span 2;
+  resize: none;
+  height: 10vh;
+  border: none;
+  margin-bottom: 20px;
+}
+.contact-info button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 12px 25px;
+    background: #d8b076;
+    color: #fff;
     text-decoration: none;
-    color: black;
-}
-.contact-info ul{
-    list-style: none;
-}
-.contact-info ul li{
-    line-height: 3rem;
-    margin-bottom: 1rem;
-}
-.contact-info i{
-    margin-right: 5px;
-}
-.contact-info form{
-    display: grid;
-    width: 100%;
-    max-width: 48rem;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-.contact-info form input{
-    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border: none;
-    border-radius: 10px;
 }
-.contact-info form *:focus{
-    outline: none;
-    box-shadow: 0 0 5px 1px var(--btn-hover);
+.contact-info button:hover {
+    transform: scale(1.05);
 }
-.contact-info textarea{
-    padding: 10px;
-    border-radius: 10px;
-    grid-column: span 2;
-    resize: none;
-    height: 10vh;
-    border: none;
-    margin-bottom: 20px;
-}
-.contact-info button{
-    padding: 10px;
-    border: none;
-    background: var(--btn-color);
-    border-radius: 10px;
-    color: var(--white-color);
-    box-shadow: 0 0 5px 1px var(--btn-hover);
-    cursor: pointer;
-}
-.contact-info button:hover{
-    background: var(--btn-hover);
-}
+
+
 
 /* Pied de page */
-.footer-page{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--fontsize1024);
-    padding: var(--pading);
-    background: var(--body-color2);
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fontsize1024);
+  padding: var(--pading);
+  background: var(--body-color2);
 }
-.footer-page div{
-    text-align: center;
+.page-footer div {
+  text-align: center;
 }
-.reseau-sociaux i{
-    font-size: var(--fontsize2560);
-    color: var(--btn-color);
-    padding: 10px;
+.reseau-sociaux i {
+  font-size: var(--fontsize2560);
+  padding: 10px;
 }
-.reseau-sociaux a{
-    text-decoration: none;
+.reseau-sociaux i:hover {
+  scale: 1.2;
+  color: var(--btn-hover);
 }
-.reseau-sociaux i:hover{
-    scale: 1.2;
-    color: var(--btn-hover);
+.page-footer a {
+  text-decoration: none;
+  color: var(--btn-color);
 }
-.footer-page img{
-    width: 13rem;
+.page-footer ul {
+  margin-top: 10px;
+  display: flex;
+  gap: 25px;
+}
+.page-footer ul a:first-child li {
+  list-style: none;
+}
+.page-footer img {
+  width: 10rem;
+  clip-path: circle();
 }
 
+/* media query */
+@media (max-width: 1024px) {
+  body {
+    font-size: var(--fontsize1024);
+  }
+  /* section contact */
+  .contact-info textarea {
+    height: 12vh;
+    margin-bottom: 10px;
+  }
+  /* section footer */
+  .page-footer {
+    font-size: var(--fontsize-768);
+  }
+  .page-footer img {
+    width: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  /* section contact */
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-info form {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .contact-info input {
+    grid-column: span 2;
+  }
+  .contact-info ul li {
+    margin-bottom: 0px;
+  }
+  /* section footer */
+  .page-footer {
+    gap: 20px;
+  }
+  .page-footer i {
+    font-size: var(--fontsize1440);
+  }
+  .page-footer ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    font-size: var(--fontsize-768);
+  }
+  /* section contact */
+  .contact-info form input {
+    padding: 10px;
+  }
+  /* section footer */
+  .page-footer {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .page-footer img {
+    width: 4rem;
+  }
+  .page-footer i {
+    font-size: var(--fontsize768);
+  }
+}
 
 
 
@@ -978,12 +1062,14 @@ body {
 
     .store_content button {
         width: 12em;
-        font-size: 11px;
+        font-size: 8px;
     }
 }
 @media (max-width: 425px) {
-    .store_content {
+     .store_content {
         gap: 1em ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .store_content button {

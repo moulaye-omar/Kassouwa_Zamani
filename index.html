@@ -18,10 +18,10 @@
                 <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
             <ul class="nav-links">
                 <li><a class="home"href="#Home">Accueil</a></li>
-                <li><a href="#About">A propos</a></li>
-                <li><a href="#Services">Nos produits</a></li>
-                <li><a href="#Portfolio">Témoignages</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#produit">Nos produits</a></li>
+                <li><a href="#section_temoignage">Témoignages</a></li>
+                <li><a href="#contact">Contacts</a></li>
                 <!-- <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
                 <!-- <li><a href="#"><li><a href="#Contacts">Contacts</a></li></a></li> -->
                 <li><a href="connexion.html"><div class="bouton"><button>Connexion</button></div></a></li>
@@ -52,7 +52,7 @@
     </header>
 
     <!-- Section A propos -->
-   <section class="apropos">
+   <section class="apropos" id="apropos">
     <h2>A propos de nous</h2>
 
     <div class="about-container">
@@ -100,7 +100,7 @@
 
 
     <!-- Section nos produit -->
-    <section class="produit">
+    <section class="produit" id="produit" >
         <h1>Our store</h1>
          <div class="store_content">
             <a href=""><button type="button">All</button></a>
@@ -390,7 +390,7 @@
     </section>
 
     <!-- Section témoignage -->
-    <section class="section_temoignage">
+    <section class="section_temoignage" id="section_temoignage">
         <div class="T_parti_1">
             <h1>TÉMOIGNAGES</h1>
             <div class="temoigange_cards">
@@ -508,7 +508,7 @@
 
     <!-- Section Contact -->
     <section id="contact">
-        <h1>Contactez-Nous</h1>
+        <h2>Contactez-Nous</h2>
         <div class="contact-info">
             <div>
                 <ul>
@@ -520,30 +520,35 @@
                     <a href=""><li><i class="fa-solid fa-globe"></i> www.sabuwa-kassouwa.com</li></a>
                 </ul>
             </div>
-            <div>
+            <div class="form_div">
                 <form action="">
                     <input type="text" placeholder="Nom" required>
                     <input type="text" placeholder="Prénom" required>
                     <input type="email" placeholder="Email" required>
                     <input type="tel" placeholder="Numéro" required>
                     <textarea name="" id="" placeholder="message..."required></textarea>
-                    <button type="submit">Envoyez</button>
                 </form>
+                <button type="submit">Envoyez</button>
             </div>
         </div>
     </section>
 
     <!-- Pied de page -->
-    <footer class="footer-page">
-        <div><a href=""><img src="images/logo.png" alt=""></a></div>
+    <footer class="page-footer">
+        <div><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <div>
+            <p>&COPY; 2025 Kassuwa Zamani Tous Droits Réservés</p>
+            <ul>
+                <a href="https://us.shein.com/Privacy-Center-a-1045.html"><li>Politique de confidentialité</li></a>
+                <a href="https://us.shein.com/Privacy-Center-a-1045.html"><li>Politique de remboursement</li></a>
+            </ul>
+        </div>
         <div class="reseau-sociaux">
             <a href="https://www.facebook.com/SHEINUS/"><i class="fa-brands fa-facebook-f"></i> </a>
             <a href="instagram.com/shein_us/"><i class="fa-brands fa-instagram"></i> </a>
             <a href="https://x.com/SHEIN_News"><i class="fa-brands fa-twitter"></i> </a>
             <a href="linkedin.com/careersite/sheinus"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <div><p>&COPY; 2025 Kassuwa Zamani All Right Reserved</p>
-        <p>Privacy policy . Refund policy </p></div>
     </footer>
 </body>
 </html>
