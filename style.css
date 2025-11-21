@@ -206,7 +206,7 @@ body {
 }
 
 .typewriter {
-  font-size: 5rem;
+  font-size: 6.8rem;
   font-weight: bold;
   color: white;
   overflow: hidden;             /* cache le texte */
@@ -216,12 +216,14 @@ body {
  animation: typing 5s steps(20) infinite alternate,
              blink 0.7s infinite;
 }
-
+.slogan{
+  font-size: 2.3rem;
+}
 
 /* animation écriture */
 @keyframes typing {
   from { width: 0; }
-  to { width: 93%; }
+  to { width: 130%; }
 }
 
 /* animation clignotement du curseur */
@@ -236,16 +238,16 @@ body {
 .text-overlay{
     position: absolute;
   z-index: 5;
-  top: 30%;
-  left: 50%;
+  top: 50%;
+  left: 43%;
   transform: translate(-50%, -50%);
   color: #FAF4EC;
   /* text-align: center; */
-
   color: white;
   text-shadow: 0 2px 20px rgba(0,0,0,0.8);
   width: 80%;
 }
+
 .carousel {
   position: relative;
   width: 100vw;
@@ -296,6 +298,18 @@ body {
   /* PASSAGE À L’IMAGE 3 */
   66%  { transform: translateX(-200vw); }
   100% { transform: translateX(-200vw); }
+}
+
+/* Icône hamburger */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -418,6 +432,22 @@ body {
 }
 
 @media (min-width: 2560px) {
+
+
+  /* --------------- header ------------ */
+
+  .typewriter {
+    font-size: 9rem;
+  }
+  .slogan{
+    font-size: 3rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
     .apropos h2 {
         font-size: 4rem;
     }
@@ -435,9 +465,41 @@ body {
    left: 8rem;
 }
 }
+@media (max-width: 1440px) {
+
+  /* ------------ header --------------- */
+
+  .typewriter {
+    font-size: 5rem;
+  }
+  .slogan{
+    font-size: 2rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
+  
+}
 @media (max-width: 1024px) {
 
-    
+  /* ------------- header ----------- */
+
+  .typewriter {
+    font-size: 3.6rem;
+  }
+  .slogan{
+    font-size: 1.5rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
+    /* ----------------- A propos ------------ */
     .apropos h2 {
         font-size: 2.5rem;
         text-align: center;
@@ -468,6 +530,59 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  /* -------- header -------- */
+/* 🧱 Mode responsive  */
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        /* left: 0; */
+        /* right: 25%; */
+        right: 15px;
+        width: 30%;
+        background-color: #faf4ec88;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        border-radius: 20px;
+    }
+
+    /* Quand la checkbox est cochée, on affiche le menu */
+    #menu-toggle:checked+.menu-icon+.nav-links {
+        display: flex;
+    }
+
+    /* On affiche l’icône hamburger */
+    .menu-icon {
+        /* margin-right: 20px; */
+        font-size: 2.8rem;
+        color: #2B1904;
+        display: block;
+        right: 0;
+    }
+    .typewriter {
+    font-size: 2.8rem;
+  }
+  .slogan{
+    font-size: 1.1rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 120%; }
+  }
+
+  /* animation clignotement du curseur */
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+
+
+
+  /* -------- A prospos -------------  */
     .apropos {
         padding: 2em 1em;
     }
@@ -505,6 +620,24 @@ body {
 }
 
 @media (max-width: 425px) {
+
+  /* ------------ header ----------- */
+
+.typewriter {
+    font-size: 1.5rem;
+  }
+  .slogan{
+    font-size: 1rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 118%; }
+  }
+
+
+  /* ------------ A propos ------------  */
     .apropos h2 {
         font-size: 2rem;
     }
@@ -522,6 +655,24 @@ body {
     }
 }
 @media (max-width: 375px) {
+
+  /* ---------- header ----------- */
+.typewriter {
+    font-size: 1.3rem;
+  }
+  .slogan{
+    font-size: 0.7rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 113%; }
+  }
+
+
+
+  /* ----------- A propos ------------- */
     .apropos h2 {
         font-size: 1.8rem;
     }
