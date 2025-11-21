@@ -1336,7 +1336,6 @@ body {
     
 }
 } 
-<<<<<<< HEAD
 
 /* Section Contact */
 #contact {
@@ -1608,91 +1607,4 @@ body {
         font-size: 8px;
         border-radius: 5px;
     }
-=======
-@media (max-width:1024px) {
-    body{
-        font-size: var(--fontsize1024);
-    }
-    .temoigange_cards ,.partenaire_cards{
-    width: 100%;
-}
-.temoigange_cards .right{
-    right: 10px;
-}
-
-.temoigange_cards .left{
-    left: 10px;
-}
-.témoignage_liste{
-    gap: 80px;   
-}
-} 
-@media (max-width:768px) {
-    body{
-        font-size: var(--fontsize768);
-    }
-    .temoigange_cards ,.partenaire_cards{
-    width: 100%;
-}
-.témoignage_liste{
-    gap: 150px;
-}
-    .carte{
-    width: 300px;
-    height:200px;
-}
-.T_parti_1 h1,.T_parti_2 h1{
-    font-size: var(--H3);
-}
-
-}
-@media (max-width:450px) {
-    body{
-        font-size: var(--fontsize768);
-    }
-    .temoigange_cards ,.partenaire_cards{
-    width: 100%;
-}
-.témoignage_liste{
-    gap: 120px;
-}
-    .carte{
-    width: 300px;
-    height:200px;
-}
-.témoignage_liste{
-    padding-left: 60px;
-}
-}
-@media (max-width:450px) {
-    body{
-        font-size: var(--fontsize768);
-    }
-    .temoigange_cards ,.partenaire_cards{
-    width: 100%;
-}
-.témoignage_liste{
-    gap: 120px;
-}
-    .carte{
-    width: 300px;
-    height:200px;
-}
-.témoignage_liste{
-    padding-left: 60px;
-}
-
-}
-@media (max-width:375px) {
-.témoignage_liste{
-    padding-left: 25px;
-}
-
-}
-@media (max-width:320px) {
-.témoignage_liste{
-    padding-left: 0px;
-}
-
->>>>>>> 8d2ff998ea4ed61512ea480916be64ead24ee5ec
 }
