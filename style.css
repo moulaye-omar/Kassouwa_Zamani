@@ -14,19 +14,25 @@
     --H2 : 3rem;
     --H3 : 2rem;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body-color1);
+    overflow-x: hidden !important;
 }
-<<<<<<< HEAD
-
+.m{
+    overflow-x: hidden;
+}
 /* Entête du projet */
 .header{
     width: 100vw;
@@ -36,7 +42,7 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     /* height: 70px; */
     z-index: 6;
     background-color: #FAF4EC;
@@ -64,6 +70,11 @@ body {
 }
 .nav-links a:hover {
     color:  #d8b076;
+}
+
+.sos {
+    display: flex;
+    gap: 1em;
 }
 .logo{
     width: 60px;
@@ -253,15 +264,16 @@ body {
   position: relative;
   width: 100vw;
   height: calc(100vh - 70px);
-  top: 70px;
+  margin-top: 70px;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
-  width: 300%;   /* 3 images = 300% */
+  width: 300%;
   height: 100%;
   animation: slide 10s ease-in-out infinite alternate-reverse; /* 6s par image */
+
 }
 
 .slide {
@@ -330,7 +342,7 @@ body {
 
 .apropos h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -432,286 +444,6 @@ body {
     100% { transform: translateY(0); }
 }
 
-@media (min-width: 2560px) {
-
-
-  /* --------------- header ------------ */
-
-  .typewriter {
-    font-size: 9rem;
-  }
-  .slogan{
-    font-size: 3rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 115%; }
-  }
-    .apropos h2 {
-        font-size: 4rem;
-    }
-    .about-text {
-        font-size: 1.5rem;
-    }
-    .images{
-        width: 50rem;
-    }
-   .gallery img {
-    width: 100px;
-    border-radius: 10px;
-    transition: 0.3s;
-   position: relative;
-   left: 8rem;
-}
-}
-@media (max-width: 1440px) {
-
-  /* ------------ header --------------- */
-
-  .typewriter {
-    font-size: 5rem;
-  }
-  .slogan{
-    font-size: 2rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 115%; }
-  }
-  
-}
-@media (max-width: 1024px) {
-
-  /* ------------- header ----------- */
-
-  .typewriter {
-    font-size: 3.6rem;
-  }
-  .slogan{
-    font-size: 1.5rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 115%; }
-  }
-    /* ----------------- A propos ------------ */
-    .apropos h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    
-    .about-text {
-        font-size: 1rem;
-        line-height: 1.6rem;
-        text-align: center;
-        padding: 0 1rem;
-    }
-
-    .images {
-        width: 28rem;      
-        margin: 0 auto;   
-    }
-
-
-    .gallery img {
-        width: 90px;       
-        position: relative;
-        left: 0;          
-        display: block;
-        margin: 0.5rem auto;
-    }
-}
-
-@media (max-width: 768px) {
-
-  /* -------- header -------- */
-/* 🧱 Mode responsive  */
-    .nav-links {
-        position: absolute;
-        top: 90px;
-        /* left: 0; */
-        /* right: 25%; */
-        right: 15px;
-        width: 30%;
-        background-color: #faf4ec88;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
-        display: none;
-        border-radius: 20px;
-    }
-
-    /* Quand la checkbox est cochée, on affiche le menu */
-    #menu-toggle:checked+.menu-icon+.nav-links {
-        display: flex;
-    }
-
-    /* On affiche l’icône hamburger */
-    .menu-icon {
-        /* margin-right: 20px; */
-        font-size: 2.8rem;
-        color: #2B1904;
-        display: block;
-        right: 0;
-    }
-    .typewriter {
-    font-size: 2.8rem;
-  }
-  .slogan{
-    font-size: 1.1rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 120%; }
-  }
-
-  /* animation clignotement du curseur */
-  @keyframes blink {
-    50% { border-color: transparent; }
-  }
-
-
-
-  /* -------- A prospos -------------  */
-    .apropos {
-        padding: 2em 1em;
-    }
-
-    .apropos h2 {
-        font-size: 2.5rem;
-    }
-
-    .about-container {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .about-text {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .images {
-        width: 25rem;
-        margin: auto;
-    }
-
-    .gallery {
-       display: flex;
-       
-        justify-content: center;
-    }
-
-    .gallery img {
-        width: 70px;
-        left: 0;
-    }
-}
-
-@media (max-width: 425px) {
-
-  /* ------------ header ----------- */
-
-.typewriter {
-    font-size: 1.5rem;
-  }
-  .slogan{
-    font-size: 1rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 118%; }
-  }
-
-
-  /* ------------ A propos ------------  */
-    .apropos h2 {
-        font-size: 2rem;
-    }
-
-    .about-text {
-        font-size: 1rem;
-    }
-
-    .images {
-        width: 18rem;
-    }
-
-    .gallery img {
-        width: 60px;
-    }
-}
-@media (max-width: 375px) {
-
-  /* ---------- header ----------- */
-.typewriter {
-    font-size: 1.3rem;
-  }
-  .slogan{
-    font-size: 0.7rem;
-  }
-
-  /* animation écriture */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 113%; }
-  }
-
-
-
-  /* ----------- A propos ------------- */
-    .apropos h2 {
-        font-size: 1.8rem;
-    }
-
-    .about-text {
-        font-size: 0.95rem;
-    }
-
-    .images {
-        width: 16rem;
-    }
-
-    .gallery img {
-        width: 55px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Section nos produit */
 
@@ -721,7 +453,7 @@ body {
     padding-top: 100px;
 }
 .produit h1 {
-    font-size: 3rem;
+    font-size: var(--H1);
 }
 .produit h2 {
     font-size: 2.5rem;
@@ -797,6 +529,9 @@ body {
     height: 26rem;
 } 
 
+#valider {
+    display: flex;
+}
 #toggle-detail1 {
     display: none;
 }
@@ -1165,13 +900,11 @@ body {
 
 /* Section témoignage */
 
-=======
->>>>>>> 8d2ff998ea4ed61512ea480916be64ead24ee5ec
 .section_temoignage{
     padding: 100px 2em 2em;
     /* padding: var(--pading); */
     background-color: var(--body-color2);
-    height: 100vh;
+    height: auto;
 }
 .T_parti_1{
     display: flex;
@@ -1184,6 +917,7 @@ body {
 .T_parti_1 h1,.T_parti_2 h1{
     font-size: var(--H2);
     color: #2b1904;
+    font-weight: bold;
 }
 .temoigange_cards ,.partenaire_cards{
     display: flex;
@@ -1233,13 +967,14 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 5px solid #2b1904;
+    border: 3px solid #2b1904;
     position: relative;
 }
 .temoignage .image img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    object-fit: cover;
 
 }
 .temoignage p{
@@ -1317,30 +1052,15 @@ body {
     width: 100%;
     height: 100%;
 }
- 
-@media (max-width:1440px) {
-    body{
-        font-size: var(--fontsize1440);
-    }
-    .T_parti_1 h1,.T_parti_2 h1{
-    font-size: var(--H1);
-}
-    .section_temoignage{
-        height: auto;
-    }
-    .temoigange_cards ,.partenaire_cards{
-    width: 90%;
-}
-.témoignage_liste{
-    gap: 150px;
-    
-}
-} 
 
 /* Section Contact */
 #contact {
   text-align: center;
   padding: var(--pading);
+  /* height: 100vh; */
+}
+#contact h1 {
+  font-size: var(--H1);
 }
 .contact-info {
   margin-top: 3rem;
@@ -1608,3 +1328,354 @@ body {
         border-radius: 5px;
     }
 }
+
+
+@media (min-width: 2560px) {
+
+
+  /* --------------- header ------------ */
+
+  .typewriter {
+    font-size: 9rem;
+  }
+  .slogan{
+    font-size: 3rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
+    .apropos h2 {
+        font-size: 4rem;
+    }
+    .about-text {
+        font-size: 1.5rem;
+    }
+    .images{
+        width: 50rem;
+    }
+   .gallery img {
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+   position: relative;
+   left: 8rem;
+}
+}
+@media (max-width: 1440px) {
+
+  /* ------------ header --------------- */
+
+  .typewriter {
+    font-size: 5rem;
+  }
+  .slogan{
+    font-size: 2rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
+
+  
+}
+@media (max-width: 1024px) {
+
+  /* ------------- header ----------- */
+
+  .typewriter {
+    font-size: 3.6rem;
+  }
+  .slogan{
+    font-size: 1.5rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 115%; }
+  }
+    /* ----------------- A propos ------------ */
+    .apropos h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .images {
+        width: 28rem;      
+        margin: 0 auto;   
+    }
+
+
+    .gallery img {
+        width: 90px;       
+        position: relative;
+        left: 0;          
+        display: block;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+  /* -------- header -------- */
+/* 🧱 Mode responsive  */
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        /* left: 0; */
+        /* right: 25%; */
+        right: 15px;
+        width: 50%;
+        background-color: #faf4ec88;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    /* Quand la checkbox est cochée, on affiche le menu */
+    #menu-toggle:checked+.menu-icon+.nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* On affiche l’icône hamburger */
+    .menu-icon {
+        /* margin-right: 20px; */
+        font-size: 2.8rem;
+        color: #2B1904;
+        display: block;
+        right: 0;
+    }
+    .typewriter {
+    font-size: 2.8rem;
+  }
+  .slogan{
+    font-size: 1.1rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 120%; }
+  }
+
+  /* animation clignotement du curseur */
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+
+
+
+  /* -------- A prospos -------------  */
+    .apropos {
+        padding: 2em 1em;
+        height: auto;
+    }
+
+    .apropos h2 {
+        font-size: 4rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .images {
+        width: 25rem;
+        margin: auto;
+    }
+
+    .gallery {
+       display: flex;
+       
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 70px;
+        left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+
+  /* ------------ header ----------- */
+
+  
+.typewriter {
+    font-size: 1.5rem;
+  }
+  .slogan{
+    font-size: 1rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 118%; }
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  /* ------------ A propos ------------  */
+    .apropos h2 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .images {
+        width: 18rem;
+    }
+
+    .gallery img {
+        width: 60px;
+    }
+}
+@media (max-width: 375px) {
+
+  /* ---------- header ----------- */
+.typewriter {
+    font-size: 1.3rem;
+  }
+  .slogan{
+    font-size: 0.7rem;
+  }
+
+  /* animation écriture */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 113%; }
+  }
+
+
+
+  /* ----------- A propos ------------- */
+    .apropos h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+    }
+
+    .images {
+        width: 16rem;
+    }
+
+    .gallery img {
+        width: 55px;
+    }
+}
+
+@media (max-width:1440px) {
+    body{
+        font-size: var(--fontsize1440);
+    }
+    .section_temoignage{
+        height: auto;
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 90%;
+}
+.témoignage_liste{
+    gap: 150px;
+    
+}
+
+}
+@media (max-width:1024px) {
+    body{
+        font-size: var(--fontsize1024);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.temoigange_cards .right{
+    right: 10px;
+}
+
+.temoigange_cards .left{
+    left: 10px;
+}
+.témoignage_liste{
+    gap: 80px;   
+}
+} 
+@media (max-width:768px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 150px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+
+}
+
+@media (max-width:425px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 120px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.témoignage_liste{
+    padding-left: 60px;
+}
+
+}
+@media (max-width:375px) {
+.témoignage_liste{
+    padding-left: 25px;
+}
+
+}
+@media (max-width:320px) {
+.témoignage_liste{
+    padding-left: 0px;
+}
+
+} 

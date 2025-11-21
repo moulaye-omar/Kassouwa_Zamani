@@ -9,25 +9,38 @@
 </head>
 <body>
 
-    <header>
+    <header >
         <!-- Entête du projet -->
      <nav class="navbar">
             <div class="logo"><img src="images/logo.png" alt=""></div>
              <!-- Menu hamburger -->
-                <!-- <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-links">
                 <li><a class="home"href="#Home">Accueil</a></li>
-                <li><a href="#About">A propos</a></li>
-                <li><a href="#Services">Nos produits</a></li>
-                <li><a href="#Portfolio">Témoignages</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-                <div class="panier-dropdown">
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#produit">Nos produits</a></li>
+                <li><a href="#section_temoignage">Témoignages</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                
+                <div class="sos">
+                    <div class="profile-dropdown">
+                    <input type="checkbox" id="profile-toggle">
+                    <label for="profile-toggle" class="profile-icon">
+                    <i class="fa-solid fa-user"></i>
+                    </label>
+                    <div class="menu">
+                        <div class="circle-user"><i class="fa-solid fa-circle-user"></i></i></div>
+                        <div><button>Modifier la photo</button></div>
+                        <div class="ecris"><p>Nom: Williams</p><p>Prenom: Smith</p></div>
+                        <a href="index.html"><button class="logout-btn">Déconnexion</button></a>
+                    </div>
+                    </div>
+                    <div class="panier-dropdown">
                     <input type="checkbox" id="panier-toggle">
                     <label for="panier-toggle" class="panier-icon">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </label>
-
                     <div class="menu1">
                         <div>
                             <div class="ecriss">
@@ -56,34 +69,24 @@
                                 
                             </div>
                         </div>
-                        <button class="logout-btn">Valider le panier</button>
                     </div>
                 </div>
-                <div class="profile-dropdown">
-                    <input type="checkbox" id="profile-toggle">
-                    <label for="profile-toggle" class="profile-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </label>
-
-                    <div class="menu">
-                        <div class="circle-user"><i class="fa-solid fa-circle-user"></i></i></div>
-                        <div><button>Modifier la photo</button></div>
-                        <div class="ecris"><p>Nom: Williams</p><p>Prenom: Smith</p></div>
-                        <a href="index.html"><button class="logout-btn">Déconnexion</button></a>
-                    </div>
                 </div>
             </ul>
         </nav>
-        <div class="carousel">
+    </header>
+    <main class="m">
+          <!-- Section caroussel -->
+          <div class="carousel" id="Home">
 
             <div class="text-overlay">
-                <h2>Mon texte fixe</h2>
-                <p>Ce texte reste toujours visible</p>
+                <h1 class="typewriter">Bienvenue sur Kassuwa Zamani</h1>
+                <h2 class="slogan">Votre Bonheur, Notre Priorité</h2>
             </div>
 
             <div class="slides">
                 <div class="slide ">
-                    <img src="images/epices.jpg" alt="" srcset="">
+                    <img src="images/epices.jpg" alt="" srcset=""> 
                 </div>
                 <div class="slide ">
                     <img src="images/desert.jpg" alt="" srcset="">
@@ -94,22 +97,1064 @@
             </div>
 
         </div>
+        <!-- Section A propos -->
+   <section class="apropos" id="apropos">
+    <h2>A propos de nous</h2>
 
-    </header>
+    <div class="about-container">
 
-    <!-- Section A propos -->
-    <section></section>
+        <!-- Texte à gauche -->
+        <div class="about-text">
+            <p>
+                Kassouwa_Zamani est une plateforme E-commerce dédiée à la promotion
+                des richesses du Niger, qu'elles soient artisanales ou alimentaires.
+            </p>
+
+            <p>
+                Nous réunissons en un seul espace des produits fabriqués à la main,
+                des spécialités culinaires locales ainsi que des denrées naturelles,
+                issues du savoir-faire traditionnel nigérien.
+            </p>
+
+            <p>
+                Notre mission : valoriser les artisans, producteurs et coopératives 
+                locales en leur offrant une vitrine moderne et accessible.
+            </p>
+             <a href="#" class="about-btn">En savoir plus</a>
+        </div>
+
+        <!-- Image + galerie -->
+        <div class="about-image">
+            
+            <input type="checkbox" id="toggle-gallery">
+            <label for="toggle-gallery" class="main-img">
+        <img src="images/croix.jpg" alt="" class="images">
+    </label>
+
+
+                <div class="gallery">
+                    <img src="images/IMG_20210117_155317_330-576x1024.jpg" alt="">
+                    <img src="images/sac zarma.jpg" alt="">
+                    <img src="images/WhatsApp_Image_2025-03-15_à_17.57.48_75fa66f6.jpg" alt="">
+                    <img src="images/l_w3-bijoux-touareg-argent-925-poinçon-peterandclo--800-230116-00012.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- Section nos produit -->
-    <section></section>
+    <section class="produit" id="produit" >
+        <h1>Our store</h1>
+         <div class="store_content">
+            <a href=""><button type="button">All</button></a>
+            <a href="#Accessoire"><button type="button">Accessoire</button></a>
+            <a href="#Nos plats"><button type="button">Nos plats</button></a>
+            <a href="#Vêtements"><button type="button">Vêtements</button></a>
+            <a href="#Produits Agricole"><button type="button">Produits Agricole</button></a>
+        </div>
+        <section class="partie1" id="Accessoire">
+            <h2>Accessoire</h2>
+            <div class="section_card">
+                <input type="checkbox" id="toggle-detail1">
+                <label for="toggle-detail1" class="card">
+                    <div class="card_media">
+                        <img src="images/chaussure.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Chaussure Balka</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>3 467 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Teghateme Chaussure Balka Cuir Homme, qui s'adresse à tous, pour qui la mode signifie fantaisie.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail1" class="detail1">
+                <div class="detail-content">
+                    <label for="toggle-detail1" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Chaussure Balka – Cuir Traditionnel</h2>
+                        <p class="price">3 467 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/chaussure.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Un modèle inspiré du savoir-faire artisanal du Niger, conçu pour les hommes qui aiment allier confort et élégance au quotidien.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : 40 à 46</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                <input type="checkbox" id="toggle-detail2">
+                <label for="toggle-detail2" class="card">
+                    <div class="card_media">
+                        <img src="images/bijoux-touareg.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Bijoux touareg</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>4 000 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Les bijoux touareg sont créés de façon totalement traditionnelle à la cire perdue par les bijoutiers touareg.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail2">
+                <div class="detail-content">
+                    <label for="toggle-detail2" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Bijoux Touareg</h2>
+                        <p class="price">3 467 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/bijoux-touareg.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionnés à la main par les artisans touaregs d’Agadez, ces bijoux sont réalisés selon la technique ancestrale de la cire perdue. Chaque pièce est unique, raffinée et témoigne d’un savoir-faire authentique.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cire véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : Adulte et enfants</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox"  id="toggle-detail3">
+                <label for="toggle-detail3" class="card">
+                    <div class="card_media">
+                        <img src="images/main-image-6_8c3b246a-eee8-413c-8039-f659c719295b.webp" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Sac à main</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>37,500 CFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail3">
+                <div class="detail-content">
+                    <label for="toggle-detail3" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Sac à main</h2>
+                        <p class="price">5 000 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/main-image-6_8c3b246a-eee8-413c-8039-f659c719295b.webp" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                </div>
+                <div class="voir_btn">
+                    <a href="accessoire.html"><button type="submit" class="bton1">Voir plus...</button></a>
+                </div>
+        </section>
+
+
+        <section class="partie2" id="Nos plats">
+            <h2>Nos plats</h2>
+            <div class="section_card">
+                <input type="checkbox" id="toggle-detail4">
+                <label for="toggle-detail4" class="card">
+                    <div class="card_media">
+                        <img src="images/5eba5f369aae5f912616a1ebcbe09716.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Dambou</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>600 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Fait à base de maïs et de moringa le dambou et l'un des plats les plus apprécier au Niger.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail4">
+                <div class="detail-content">
+                    <label for="toggle-detail4" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Sac à main</h2>
+                        <p class="price">5 000 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/5eba5f369aae5f912616a1ebcbe09716.jpg" alt="Chaussure Balka">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                <input type="checkbox" id="toggle-detail5">
+                <label for="toggle-detail5" class="card">
+                    <div class="card_media">
+                        <img src="images/EebK1DXXkAE840i.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Pâte de maïs</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>500 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>L'un de nos meilleurs plats au Niger. Et aussi une spécialité pour les connaisseurs.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail5">
+                <div class="detail-content">
+                    <label for="toggle-detail5" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Pate de maïs</h2>
+                        <p class="price">500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/EebK1DXXkAE840i.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail6">
+                <label for="toggle-detail6" class="card">
+                    <div class="card_media">
+                        <img src="images/20220527_132525-950x713.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Viande grillée</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>3 500 CFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>La viande une spécialité locale à toutes heure et dans toutes les sauces. L'un des aliments les plus convoités au Niger</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail6">
+                <div class="detail-content">
+                    <label for="toggle-detail6" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/20220527_132525-950x713.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                </div>
+                <div class="voir_btn">
+                    <a href="plats.html"><button type="submit" class="bton1">Voir plus...</button></a>
+                </div>
+        </section>
+
+
+        <section class="partie3" id="Vêtements">
+            <h2>Vêtements</h2>
+            <div class="section_card">
+                <input type="checkbox" id="toggle-detail7">
+              <label for="toggle-detail7" class="card">
+                    <div class="card_media">
+                        <img src="images/habillement11.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>pullover traditionnel</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>4 000 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Des pullovaire conçu au Niger avec differents tissu traditionnel Nigerien.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+              </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail7">
+                <div class="detail-content">
+                    <label for="toggle-detail7" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/habillement11.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail8">
+                <label for="toggle-detail8" class="card">
+                    <div class="card_media">
+                        <img src="images/habillement10.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Sac à main</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>37,500 CFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Confectionné en tissu PU tissé à la main, elle incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail8">
+                <div class="detail-content">
+                    <label for="toggle-detail8" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/habillement10.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail9">
+                <label for="toggle-detail9" class="card">
+                    <div class="card_media">
+                        <img src="images/cropped-wp-1581316121103-1.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Sac à main</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>37,500 CFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Confectionné en tissu PU tissé à la main, elle incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail9">
+                <div class="detail-content">
+                    <label for="toggle-detail9" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Viande grillée</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/cropped-wp-1581316121103-1.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                </div>
+                <div class="voir_btn">
+                    <a href="Vêtements.html"><button type="submit" class="bton1">Voir plus...</button></a>
+                </div>
+        </section>
+
+
+        <section class="partie3" id="Produits Agricole">
+            <h2>Produits Agricole</h2>
+            <div class="section_card">
+                <input type="checkbox" id="toggle-detail10">
+                <label for="toggle-detail10" class="card">
+                    <div class="card_media">
+                        <img src="images/POMME-DE-TERRE-ARCHIVES-PHOTOS-4.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Pomme de terre</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>300 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Cultuver généralement en Agadez comme culture de contre saison la pomme de terre est 100% locale et pas cher.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail10">
+                <div class="detail-content">
+                    <label for="toggle-detail10" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Pomme de terre</h2>
+                        <p class="price">3 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/POMME-DE-TERRE-ARCHIVES-PHOTOS-4.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail11">
+                <label for="toggle-detail11" class="card">
+                    <div class="card_media">
+                        <img src="images/OIGNONS.jpg" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Oignons</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>700 FCFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Cultuver généralement en Agadez comme culture de contre saison l'oignon est 100% locale et pas cher.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail11">
+                <div class="detail-content">
+                    <label for="toggle-detail11" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Oignons</h2>
+                        <p class="price">1 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/OIGNONS.jpg" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                 <input type="checkbox" id="toggle-detail12">
+                <label for="toggle-detail12" class="card">
+                    <div class="card_media">
+                        <img src="images/News_8_22_klein.webp" alt="">
+                    </div>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <span>Mil</span>
+                            <!-- <span>C'est un bijoux traditionnel confectionner avec soin par les meilleurs artisants d'Agadez.</span> -->
+                            <span>1000 CFA</span>
+                        </div>
+                        <div class="card_description">
+                            <span>Le mil Nigerien est une perle Nutritive et abordable à un petit prix.</span>
+                            <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <div class="card_button">
+                            <button type="submit" class="bton1">Ajouter au panier</button>
+                        </div>
+                        
+                    </div>
+                </label>
+                <!-- contenu caché début -->
+                <div id="detail" class="detail12">
+                <div class="detail-content">
+                    <label for="toggle-detail12" class="close">&times;</label>
+                    <div class="detail-header">
+                        <h2>Oignons</h2>
+                        <p class="price">1 500 FCFA</p>
+                    </div>
+
+                    <div class="detail-image">
+                        <img src="images/News_8_22_klein.webp" alt="Pate de maïs">
+                    </div>
+
+                    <div class="detail-description">
+                        <p><strong>Description :</strong></p>
+                        <p>Confectionné en tissu PU tissé à la main, ce sac incarne l’élégance discrète tout en offrant une texture douce et agréable au toucher.</p>
+
+                        <p><strong>Détails du produit :</strong></p>
+                        <ul>
+                            <li>Matière : cuir véritable</li>
+                            <li>Fabrication locale artisanale</li>
+                            <li>Semelle intérieure douce et respirante</li>
+                            <li>Style : modern-traditionnel</li>
+                            <li>Durabilité renforcée</li>
+                        </ul>
+
+                        <p><strong>Disponibilité :</strong></p>
+                        <ul>
+                            <li>Tailles : grand, petit , moyen</li>
+                            <li>Couleurs : noir, marron, camel</li>
+                        </ul>
+                        <p><strong>Avis :</strong> <span class="etoile">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (47 avis)</p>
+                    </div>
+                    <a href="connexion.html"><button class="bton2">Ajouter au panier</button></a>
+                </div>
+                </div>
+                <!-- contenu caché fin -->
+                </div>
+                <div class="voir_btn">
+                    <a href="Produits_Agricole.html"><button type="submit" class="bton1">Voir plus...</button></a>
+                </div>
+        </section>
+    </section>
 
     <!-- Section témoignage -->
-    <section></section>
-
+    <section class="section_temoignage" id="section_temoignage">
+        <div class="T_parti_2">
+            <h1>Nos Services de livraison</h1>
+            <div class="partenaire_cards">
+                <div class="cards_movie">
+                    <div class="carte">
+                        <img src="./partenaire/service-livraison-ligne-sans-contact-au-bureau-domicile-moto-suivi-commande-ligne_195968-30.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/service-livraison.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/TB19Yl3LBr0gK0jSZFnXXbRRXXa-1200-729.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/téléchargement.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/15540944-service-de-livraison-gratuit-express-a-domicile-ou-rapide-par-van-voiture-avec-pile-de-colis-et-smartphone-avec-application-mobile-pour-le-suivi-de-livraison-en-ligne-illustrationle-de-style-plat-vectoriel.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/cmh2n2yo8000204l56c1uhtqo.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/1198724-page-de-destination-du-service-de-livraison-de-nourriture-vectoriel.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/images.jpeg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/SLIDERPETITMESSAGERIE-1.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/service-livraison-ligne-sans-contact-au-bureau-domicile-moto-suivi-commande-ligne_195968-30.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/téléchargement.jpeg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/parcel-delivery-service-1400x800.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/livreur-domicile-symbole-livraison_183044-53.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/Comment-mettre-en-place-un-service-de-livraison.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="T_parti_2">
+            <h1>NOS-PARTENAIRES</h1>
+            <div class="partenaire_cards">
+                <div class="cards_movie">
+                    <div class="carte">
+                        <img src="./partenaire/e-commerce-logo,online-store-shop-logo,bag-design-template-ae7e60cb6b2ece8b8451df461cf96a76_screen.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/LOGO-NITA-PNG.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/logo-du-commerce-electronique-boutique-ligne_1199645-37307.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/logo-poignee-main-deux-mains-font-accord-utilisable-pour-logos-affaires-cooperation_1190297-37364.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/partner-partnership-people-business-cooperation-260nw-2229756949.webp" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/logo-poignee-main-du-point-vente_8251-728.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/logo-degrade-pour-entreprises-commerce-electronique_667318-36.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/paypal-vante-merites-blockchain-revolution-moyens-paiements.webp" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/TB19Yl3LBr0gK0jSZFnXXbRRXXa-1200-729.avif" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/ansi-67ffc176658ba.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/unnamed.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/western-union-1x.png" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/e-commerce-logo,online-store-shop-logo,bag-design-template-ae7e60cb6b2ece8b8451df461cf96a76_screen.jpg" alt="">
+                    </div>
+                    <div class="carte">
+                        <img src="./partenaire/boa.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="T_parti_1">
+            <h1>TÉMOIGNAGES</h1>
+            <div class="temoigange_cards">
+                <ul class="témoignage_liste">
+                    <li class="temoignage" id="t_0">
+                        <div class="image">
+                            <img src="./temoignage/portrait6.jpg" alt="" >
+                            </div>
+                            <h4>Sarah</h4>
+                        <p>"Les vêtements sont confortables, bien coupés et durables. Je suis très satisfait de la qualité générale et du style proposé par la boutique."</p>     
+                    </li>
+                    <li class="temoignage" id="t-1">
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 16.08.30.png" alt="" >
+                            </div>
+                            <h4>Dan Salaou</h4>
+                            <p>"J’adore ces vêtements : matière douce, belles finitions et couleurs qui tiennent au lavage. Très bon rapport qualité-prix, je recommande vraiment."</p>
+                    </li>
+                    <li class="temoignage" id="t-2">
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 16.05.39.png" alt="" >
+                            </div>
+                            <h4>Abass</h4>
+                            <p>"J’ai été impressionné par la solidité et le style des accessoires. Ils complètent parfaitement mes tenues. Je suis vraiment ravi."</p>
+                    </li>
+                    
+                    <li class="temoignage" id="t-5">
+                        <div class="image">
+                            <img src="./temoignage/23669fe7-1e95-4dbb-93b1-a73c485e4135.JPG" alt="" >
+                        </div>
+                        <h4>Soultan</h4>
+                        <p>"Les vêtements sont confortables, bien coupés et durables. Je suis très satisfait de la qualité générale et du style proposé par la boutique."</p>     
+                    </li>
+                    <li class="temoignage" id="t-3">
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 15.53.11.png" alt="" >
+                            </div>
+                            <h4>Bello</h4>
+                            <p>"Super accessoires : élégants, utiles et très bien finis. Je les utilise chaque jour sans problème. Très bon achat, je suis content."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/IMG_6220.JPG" alt="" >
+                            </div>
+                            <h4>Rafiatou</h4>
+                        <p>"Produits très soignés, beaux et robustes. C’est exactement ce que je cherchais. Je recommande cette boutique pour la qualité des accessoires."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/PHOTO-2025-11-21-04-21-59.jpg" alt="" >
+                            </div>
+                            <h4>Mira</h4>
+                        <p>"Délicieux ! Les produits sont frais, bien assaisonnés et très agréables. Une expérience vraiment satisfaisante que je recommande sans hésitation."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 15.54.00.png" alt="" >
+                            </div>
+                            <h4>Yacine</h4>
+                        <p>"rès belle expérience d’achat : vêtements doux, accessoires élégants, nourriture savoureuse. Je suis vraiment content de mes commandes. Service client excellent."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/undraw_fall_zh0m 2.svg" alt="" >
+                            </div>
+                            <h4>Asma</h4>
+                        <p>"Vêtements magnifiques, super confortables et résistants. J’apprécie particulièrement les détails et la finition. Je commanderai certainement encore chez eux."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 17.35.50.png" alt="" >
+                            </div>
+                            <h4>Ridouane</h4>
+                        <p>"Accessoires stylés, bien fabriqués et durables. La qualité est remarquable et l’esthétique parfaite. Je suis très satisfait de ma commande."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 16.09.39.png" alt="" >
+                            </div>
+                            <h4>Omar</h4>
+                        <p>"Je recommande fortement : vêtements de qualité, accessoires bien finis, nourriture délicieuse. Toujours satisfait de mes commandes. Très bon rapport qualité-prix."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 16.07.10.png" alt="" >
+                            </div>
+                            <h4>Maryam</h4>
+                        <p>"J’adore leurs accessoires : looks modernes, matériaux solides et style impeccable. Honnêtement, je suis vraiment impressionné par la qualité générale."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/IMG_7254.JPG" alt="" >
+                            </div>
+                            <h4>Ridiwane</h4>
+                        <p>"Très bon goût, produits frais et bien conservés. Je suis totalement satisfait. Le service est rapide et la qualité toujours présente."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/IMG_0392.JPG" alt="" >
+                            </div>
+                            <h4>Halima</h4>
+                        <p>"Accessoires magnifiques, bien pensés et très robustes. Ils correspondent exactement à la description. Je suis très heureux de ma commande."</p>
+                    </li>
+                    <li class="temoignage" >
+                        <div class="image">
+                            <img src="./temoignage/Capture d’écran 2025-11-21 à 17.19.10.png" alt="" >
+                            </div>
+                            <h4>Ismael</h4>
+                        <p>"Accessoires stylés, bien fabriqués et durables. La qualité est remarquable et l’esthétique parfaite. Je suis très satisfait de ma commande."</p>
+                    </li>
+                </ul>
+                <div  class="left"><i class="fa-solid fa-angle-left"></i></div>
+                <div  class="right"><i class="fa-solid fa-angle-right"></i></div>  
+                <!-- <div class="t_pointe"> 
+                    <span></span>
+                    <span class="span"></span>
+                    <span></span>
+                </div> -->
+            </div>
+        </div>
+    </section>
     <!-- Section Contact -->
-    <section></section>
+    <section id="contact">
+        <h1>Contactez-Nous</h1>
+        <div class="contact-info">
+            <div>
+                <ul>
+                    <a href="https://maps.app.goo.gl/nthUCYHffLEVVxxg6"><li><i class="fa-solid fa-location-dot"></i> Sadoré-Tillabéri</li></a>
+                    <a href=""><li><i class="fa-regular fa-envelope"></i> info-sabuwa-kassouwa@gmail.com</li></a>
+                    <a href=""><li><i class="fa-solid fa-phone"></i> +227 90995950 / +227 89242996</li></a>
+                    <a href="https://wa.me/22797587226?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20votre%20produit.%20Merci." target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-whatsapp"></i> +227 97587226</li></a>
+                    <a href=""><li><i class="fa-regular fa-clock"></i> 24H/24 7J/7</li></a>
+                    <a href=""><li><i class="fa-solid fa-globe"></i> www.sabuwa-kassouwa.com</li></a>
+                </ul>
+            </div>
+            <div class="form_div">
+                <form action="">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="text" placeholder="Prénom" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Numéro" required>
+                    <textarea name="" id="" placeholder="message..."required></textarea>
+                </form>
+                <button type="submit">Envoyez</button>
+            </div>
+        </div>
+    </section>
 
-    <!-- Pied de page -->
-    <footer></footer>
+     <!-- Pied de page -->
+    <footer class="page-footer">
+        <div><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <div>
+            <p>&COPY; 2025 Kassuwa Zamani Tous Droits Réservés</p>
+            <ul>
+                <a href="https://us.shein.com/Privacy-Center-a-1045.html"><li>Politique de confidentialité</li></a>
+                <a href="https://us.shein.com/Privacy-Center-a-1045.html"><li>Politique de remboursement</li></a>
+            </ul>
+        </div>
+        <div class="reseau-sociaux">
+            <div class="ics">
+                <div class="ic"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="ic"><i class="fa-brands fa-instagram"></i></div>
+                <div class="ic"><i class="fa-brands fa-twitter"></i></div>
+                <div class="ic"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+        </div>
+    </footer>
+    </main>
 </body>
 </html>
