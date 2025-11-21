@@ -25,26 +25,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--body-color1);
-    font-size: var(--fontsize2560);
+    font-size: var(--fontsize1440);
 }
-
-/* Entête du projet */
-
-
-
-/* Section A propos */
-
-
-
-/* Section nos produit */
-
-
-
-/* Section témoignage */
-
 .section_temoignage{
-    /* padding-top: 100px; */
-    padding: var(--pading);
+    padding: 100px 2em 2em;
+    /* padding: var(--pading); */
     background-color: var(--body-color2);
     height: 100vh;
 }
@@ -55,6 +40,10 @@ body {
     flex-direction: column;
     gap: 20px;
     height: 50%;
+}
+.T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H2);
+    color: #2b1904;
 }
 .temoigange_cards ,.partenaire_cards{
     display: flex;
@@ -67,22 +56,23 @@ body {
 .témoignage_liste{
     list-style: none;
     display: flex;
-    gap: 300px;
-    justify-content: center;
+    gap: 320px;
+    justify-content: start;
     align-items: center;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
 }
 .temoigange_cards .right{
     position: absolute;
-    right: 0px;
+    right: 80px;
     font-size: 50px;
     cursor: pointer;
 }
+
 .temoigange_cards .left{
     position: absolute;
-    left: 0;
+    left: 80px;
     font-size: 50px;
     cursor: pointer;
 }
@@ -94,14 +84,9 @@ body {
     width: 400px;
     gap: 10px;
 }
-/* @keyframes movie {
-    0% {
-        transform: translateX(0%); 
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */
+.temoignage:target{
+    transform: translateX(-50%);
+}
 .temoignage .image{
     object-fit: cover;
     display: flex;
@@ -141,10 +126,10 @@ body {
     opacity: 1;
     height: 15px;
     width: 15px;
-    background-color: var(--btn-color);
+    background-color: #2b1904;
 }
 .temoigange_cards .t_pointe span:hover{
-    background-color: var(--btn-color);
+    background-color: #2b1904;
     opacity: 1;
 }
 .T_parti_2{
@@ -153,9 +138,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.T_parti_2 h1{
-    margin-top: 20px;
+    text-align: center;
 }
 .partenaire_cards{
     padding: 50px;
@@ -196,111 +179,106 @@ body {
 }
  
 @media (max-width:1440px) {
+    body{
+        font-size: var(--fontsize1440);
+    }
+    .T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H1);
+}
     .section_temoignage{
         height: auto;
     }
+    .temoigange_cards ,.partenaire_cards{
+    width: 90%;
+}
+.témoignage_liste{
+    gap: 150px;
+    
+}
 } 
-
-/* Section Contact */
-#contact{
-    text-align: center;
-    padding: var(--pading);
-}
-.contact-info{
-    margin-top: 3rem;
-    display: flex; 
-}
-.contact-info div{
-    flex: 1;
-    justify-items: center;
-    text-align: start;
-}
-.contact-info a{
-    text-decoration: none;
-    color: black;
-}
-.contact-info ul{
-    list-style: none;
-}
-.contact-info ul li{
-    line-height: 3rem;
-    margin-bottom: 1rem;
-}
-.contact-info i{
-    margin-right: 5px;
-}
-.contact-info form{
-    display: grid;
-    width: 100%;
-    max-width: 48rem;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-.contact-info form input{
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-}
-.contact-info textarea{
-    padding: 10px;
-    border-radius: 10px;
-    grid-column: span 2;
-    resize: none;
-    height: 10vh;
-    border: none;
-    margin-bottom: 20px;
-}
-.contact-info button{
-    padding: 10px;
-    border: none;
-    background: var(--btn-color);
-    border-radius: 10px;
-    color: var(--white-color);
-    box-shadow: 0 0 10px 2px var(--btn-hover);
-    cursor: pointer;
-}
-.contact-info button:hover{
-    background: var(--btn-hover);
-}
-
-/* Pied de page */
-
-
-
-
-
-
-
-/* media contact */
-@media (max-width:1024px) and (min-width:768px){
+@media (max-width:1024px) {
     body{
         font-size: var(--fontsize1024);
     }
-    .contact-info textarea{
-        height: 12vh;
-        margin-bottom: 10px;
-    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
 }
+.temoigange_cards .right{
+    right: 10px;
+}
+
+.temoigange_cards .left{
+    left: 10px;
+}
+.témoignage_liste{
+    gap: 80px;   
+}
+} 
 @media (max-width:768px) {
-    .contact-info{
-        flex-direction: column;
-    }
-    .contact-info form{
-        margin-top: 20px;
-        width: 90%;
-    }
-    .contact-info input{
-        grid-column: span 2;
-    }
-    .contact-info ul li{
-        margin-bottom: 0px;
-    }
-}
-@media (max-width:425px) {
     body{
-        font-size: var(--fontsize-768);
+        font-size: var(--fontsize768);
     }
-    .contact-info form input{
-        padding: 10px;
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 150px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.T_parti_1 h1,.T_parti_2 h1{
+    font-size: var(--H3);
+}
+
+}
+@media (max-width:450px) {
+    body{
+        font-size: var(--fontsize768);
     }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 120px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.témoignage_liste{
+    padding-left: 60px;
+}
+}
+@media (max-width:450px) {
+    body{
+        font-size: var(--fontsize768);
+    }
+    .temoigange_cards ,.partenaire_cards{
+    width: 100%;
+}
+.témoignage_liste{
+    gap: 120px;
+}
+    .carte{
+    width: 300px;
+    height:200px;
+}
+.témoignage_liste{
+    padding-left: 60px;
+}
+
+}
+@media (max-width:375px) {
+.témoignage_liste{
+    padding-left: 25px;
+}
+
+}
+@media (max-width:320px) {
+.témoignage_liste{
+    padding-left: 0px;
+}
+
 }
