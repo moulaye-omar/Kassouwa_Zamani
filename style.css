@@ -1038,7 +1038,7 @@ body {
     }
 }
 .carte{
-    width: 2px;
+    width: 400px;
     height:250px;
     overflow: hidden;
     border-radius: 10px;
